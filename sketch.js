@@ -12,7 +12,7 @@ function preload()
 	starImg = loadImage("images/star.png");
 	fairyImg = loadAnimation("images/fairyImage1.png","images/fairyImage2.png");
 	bgImg = loadImage("images/starNight.png");
-	fairyVoice = loadSound("sound/JoyMusic.mp3");
+	//fairyVoice = loadSound("sound/JoyMusic.mp3");
 
 }
 
@@ -79,7 +79,7 @@ if(keyDown(DOWN_ARROW)) {
 
 }
 
-if(starBody.position.y > 470) {
+if(star.position.y > 470) {
 
 	Matter.Body.setStatic(starBody, true);
 
